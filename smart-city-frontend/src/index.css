@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  background: radial-gradient(circle at center, #0a0f2a, #020613);
+  color: #fff;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.neon-text {
+  text-shadow: 0 0 4px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.card {
+  background: rgba(15, 15, 30, 0.55);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px #00eaff, 0 0 30px #0077ff inset;
+  transform: translateY(-4px);
+}
+
+
+
+.neon-title {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff;
+  }
+  to {
+    text-shadow: 0 0 20px #0ff, 0 0 30px #00eaff, 0 0 50px #00eaff;
+  }
+}
+
+
+.alert-pulse {
+  animation: pulseGlow 1.5s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  }
+}
+.cyber-btn {
+  transition: all 0.25s ease;
+  transform: perspective(400px) translateZ(0);
+}
+
+.cyber-btn:hover {
+  transform: perspective(400px) translateZ(12px);
+  box-shadow: 0 0 18px #00eaff, 0 0 48px #0099ff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.font-mono {
+  letter-spacing: 1px;
+}
+.glow-card {
+  animation: cardGlow 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes cardGlow {
+  0% {
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 26px rgba(56, 189, 248, 0.65);
+  }
+}
